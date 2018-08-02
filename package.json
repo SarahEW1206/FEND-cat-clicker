@@ -1,0 +1,21 @@
+{
+  "name": "cat-",
+  "version": "1.0.0",
+  "description": "cat clicker",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cats"
+  ],
+  "author": "Sarah Waldie",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
