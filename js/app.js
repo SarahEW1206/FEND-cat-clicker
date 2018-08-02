@@ -6,7 +6,7 @@ let catData = [
 }, {
   name: 'Social Kitty',
   img: 'socialkitty.png',
-  meow: 'meow.wav'
+  meow: 'Meow.wav'
 
 },{
   name: 'Inception Kitty',
@@ -15,11 +15,11 @@ let catData = [
 },{
   name: 'Trader Kitty',
   img: 'traderkitty.png',
-  meow: 'meow.wav'
+  meow: 'Meow.wav'
 },{
   name: 'Shopper Kitty',
   img: 'shopperkitty.png',
-  meow: 'meow.wav'
+  meow: 'Meow.wav'
 }, 
 ];
 
