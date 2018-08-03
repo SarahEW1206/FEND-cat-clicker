@@ -10,39 +10,13 @@ h1 {
 }
 
 .container {
-display: flex;
-flex-direction: column;
-width: 80%;
-max-width: 1200px;
-margin: 0 auto;
-background-color: #7AB7AC;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #7AB7AC;
 }
-
-@media (min-width: 1000px) {
-.container {
-display: flex;
-flex-direction: row;
-height: 100vh;
-}
-
-nav {
-  height: 100vh;
-}
-
-.cat-menu {
-  cursor: pointer;
-  font-size: 2rem;
-  list-style: none;
-  text-align: left;
-  
-  li {
-    display: block;
-    margin: 20px;
-    }
-}
-}
-
-
 
 nav {
   background-color: #fff;
@@ -60,7 +34,7 @@ nav {
   li {
     display: block;
     margin: 20px;
-    }
+  }
 }
 
 .cats {
@@ -69,21 +43,21 @@ nav {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 100vh;
 }
 
 
 .headline {
   margin-top: 1em;
   font-family: 'Lakki Reddy', times;
-  font-size: 4em;
+  font-size: 3em;
+  line-height: 18px;
   width: 100%;
   text-align: center;
 
 }
 
 .name {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #DBA5AA;
   text-shadow: 4px 4px 11px black;
   letter-spacing: 1px;
@@ -99,7 +73,42 @@ nav {
 
 .counter {
   font-family: arial;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
   width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  nav {
+    height: 100vh;
+  }
+
+  .cat-menu {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .cat-menu li {
+    display: block;
+    margin: 20px;
+  }
+
+  .headline {
+    font-size: 4em;
+    line-height: 20px;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .counter {
+    font-size: 2rem;
+  }
 }

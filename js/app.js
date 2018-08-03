@@ -23,6 +23,7 @@ let catData = [
 }, 
 ];
 
+
 // Let's loop over the numbers in our array
 for (var i = 0; i < catData.length; i++) {
 
@@ -33,11 +34,13 @@ for (var i = 0; i < catData.length; i++) {
     var menuItem = document.createElement('li');
     menuItem.textContent = cat.name;
 
+
     //... and when we click, alert the value of `cat`
     menuItem.addEventListener('click', (function(catCopy) {
       return function() {
-        console.log(catCopy);
+
         let count = 0;
+
         document.querySelector('.counter').innerText = count + " meow!!"; 
         document.querySelector('.name').innerText = `${catCopy.name}`
         document.querySelector('.kitty-pic').setAttribute('src', `images/${catCopy.img}`);
@@ -45,17 +48,35 @@ for (var i = 0; i < catData.length; i++) {
         audio.setAttribute('src', `audio/${catCopy.meow}`);
 
         let currentPic = document.querySelector('.kitty-pic');
+
+
         currentPic.addEventListener('click', function(){
+          
+          count++;
+
+          document.querySelector('.counter').innerText = count + " meow!!"; 
+
+          if(document.querySelector('.counter').innerText == "5 meow!!") {
+            document.querySelector('.kitty-pic').setAttribute('src', 'images/madkitty1.png');
+          }
+
+          if(document.querySelector('.counter').innerText == "10 meow!!") {
+            document.querySelector('.kitty-pic').setAttribute('src', 'images/madkitty2.png');
+          }
+
           if (audio.paused) {
             audio.play();
           }else{
             audio.currentTime = 0
           }
-          count++;
-          document.querySelector('.counter').innerText = count + " meow!!"; 
-        }, false);
+
+        });
+
       };
+
+
     })(cat));
+
 
     document.querySelector('.cat-menu').appendChild(menuItem);
   };
